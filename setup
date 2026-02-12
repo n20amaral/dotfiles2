@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -euo pipefail
+
+if command -v zsh >/dev/null; then
+  sudo chsh -s $(command -v zsh) $USER
+fi
+
+if ! command -v chezmoi >/dev/null; then
+  sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin init --apply git@github.com:n20amaral/dotfiles2.git 
+fi
+
+exit 0
