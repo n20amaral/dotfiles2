@@ -1,6 +1,7 @@
 require("lualine").setup()
 
 require("bufferline").setup()
+vim.keymap.set("n", "<leader>bd", "<cmd>bd<cr>", { desc = "Delete buffer" })
 
 require("ibl").setup()
 
