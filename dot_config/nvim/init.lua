@@ -11,6 +11,10 @@ vim.pack.add({
 	-- essentials
 	"https://github.com/nvim-telescope/telescope.nvim",
 	"https://github.com/stevearc/oil.nvim",
+	"https://github.com/echasnovski/mini.pairs",
+	"https://github.com/echasnovski/mini.surround",
+	"https://github.com/echasnovski/mini.comment",
+	"https://github.com/folke/which-key.nvim",
 
 	-- coding
 	"https://github.com/nvim-treesitter/nvim-treesitter",
@@ -27,7 +31,7 @@ vim.pack.add({
 	"https://github.com/lukas-reineke/indent-blankline.nvim",
 	"https://github.com/lewis6991/gitsigns.nvim",
 
-	-- format
+	-- formatters
 	"https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim",
 	"https://github.com/stevearc/conform.nvim",
 	"https://github.com/mfussenegger/nvim-lint",
@@ -38,4 +42,4 @@ require("colorschemes")
 require("essentials")
 require("coding")
 require("ui")
-require("format")
+require("formatters")

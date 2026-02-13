@@ -27,7 +27,7 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- indentation
-vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+-- vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
 
 require("mason").setup({
 	ui = {
