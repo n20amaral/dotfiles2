@@ -1,5 +1,7 @@
 require("lualine").setup()
 
+require("bufferline").setup()
+
 require("ibl").setup()
 
 require("gitsigns").setup({
