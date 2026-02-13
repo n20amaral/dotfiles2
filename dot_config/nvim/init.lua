@@ -1,7 +1,7 @@
 vim.pack.add({
   -- dependencies
   'https://github.com/nvim-lua/plenary.nvim', -- for telescope
-  'https://github.com/nvim-tree/nvim-web-devicons', -- for nvim-treesitter
+  'https://github.com/nvim-tree/nvim-web-devicons', -- for nvim-treesitter and lualine
   'https://github.com/mason-org/mason.nvim', -- for mason-lspconfig
 
   -- colorschemes
@@ -18,11 +18,17 @@ vim.pack.add({
   'https://github.com/mason-org/mason-lspconfig.nvim',
   { 
     src = 'https://github.com/saghen/blink.cmp',
-    version = '1.*'
+    version = 'v1.9.1'
    },
+
+   -- ui
+   'https://github.com/nvim-lualine/lualine.nvim',
+   'https://github.com/akinsho/bufferline.nvim',
+   'https://github.com/lukas-reineke/indent-blankline.nvim',
 })
 
 require('options')
 require('colorschemes')
 require('essentials')
 require('coding')
+require('ui')
