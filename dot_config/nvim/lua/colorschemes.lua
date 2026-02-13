@@ -1,4 +1,4 @@
-require('catppuccin').setup({ flavour = 'macchiato')
+require('catppuccin').setup({ flavour = 'macchiato'})
 
 vim.api.nvim_create_user_command('TokyoNight', 'colorscheme tokyonight', {})
 vim.api.nvim_create_user_command('Catppuccin', 'colorscheme catppuccin', {})
