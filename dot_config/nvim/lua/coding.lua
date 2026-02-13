@@ -34,3 +34,24 @@ require('mason-lspconfig').setup({
   ensure_installed = { "lua_ls", "bashls", "pyright", "omnisharp", "ts_ls" },
 })
 
+-- require("mason-lspconfig").setup_handlers({
+--   function(server)
+--     require('lspconfig')[server].setup {}
+--   end,
+-- })
+
+require("blink.cmp").setup({
+ -- fuzzy = {
+ --   implementation = "lua",
+ -- },
+  keymap = { preset = "super-tab" },
+  sources = {
+    default = { "lsp", "path", "snippets", "buffer" },
+  },
+  completion = {
+    accept = { auto_brackets = { enabled = true } },
+  },
+  appearance = {
+    nerd_font_variant = "mono",
+  },
+})

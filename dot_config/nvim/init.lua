@@ -16,6 +16,10 @@ vim.pack.add({
   'https://github.com/nvim-treesitter/nvim-treesitter',
   'https://github.com/neovim/nvim-lspconfig',
   'https://github.com/mason-org/mason-lspconfig.nvim',
+  { 
+    src = 'https://github.com/saghen/blink.cmp',
+    version = '1.*'
+   },
 })
 
 require('options')
