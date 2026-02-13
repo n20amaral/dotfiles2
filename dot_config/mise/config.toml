@@ -1,4 +1,4 @@
 [tools]
 oh-my-posh = "latest"
-neovim = "latest"
+neovim = "nightly"
 node = "lts"
