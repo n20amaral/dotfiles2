@@ -2,3 +2,6 @@
 oh-my-posh = "latest"
 neovim = "nightly"
 node = "lts"
+fd = "latest"
+rg = "latest"
+tree-sitter = "latest"
